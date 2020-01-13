@@ -8,7 +8,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column
 
-engine = create_engine("mysql+pymysql://root:30256@106.14.40.128:3306/lagou?charset=utf8")
+engine = create_engine("mysql+pymysql://user:password@service:port/lagou?charset=utf8")
 
 Session = sessionmaker(bind=engine)
 

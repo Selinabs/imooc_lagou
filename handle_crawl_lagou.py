@@ -58,7 +58,7 @@ class HandleLaGou(object):
     def handle_request(self, method, url, data=None, info=None):
         while True:
             # 加入代理
-            proxyinfo = "http://%s:%s@%s:%s" % ('HP22Y582B5RP159D', '447C921A6443EF79', 'http-dyn.abuyun.com', '9020')
+            proxyinfo = "http://%s:%s@%s:%s" % ('代理ID', '代理密码', '代理服务器', 'port')
             proxy = {
                 "http": proxyinfo,
                 "https": proxyinfo
