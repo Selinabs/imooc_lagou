@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>折线图</title>
+    <script src="../JS/echarts.js"></script>
+</head>
+<body>
+    <div id="main" style="height: 400px;width: 600px;"></div>
+    <script type="text/javascript">
+        var myChart=echarts.init(document.getElementById('main'));
+        var option={
+            title:{
+                text:"折线图",
+                subtext: "副标题"
+            },
+            tooltip: {},
+            legend:{
+                data:["衬衫", "袜子", "打底衫"]
+            },
+            xAxis: {
+                data:["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日",]
+            },
+            yAxis: {},
+            series:[
+                {
+                    name:"衬衫",
+                    type:"line",
+                    data:[10, 20, 24, 43, 56, 25, 34]
+                },
+                {
+                    name:"袜子",
+                    type:"bar",
+                    data:[15, 20, 24, 13, 22, 25, 54]
+                },
+                {
+                    name:"打底衫",
+                    type:"line",
+                    data:[3, 2, 5, 4, 2, 3, 1]
+                },
+            ]
+        };
+        myChart.setOption(option);
+    </script>
+
+</body>
+</html>

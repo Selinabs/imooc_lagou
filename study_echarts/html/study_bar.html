@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>ECharts</title>
     <!-- 引入 echarts.js -->
-    <script src="../JS/echarts.min.js"></script>
+    <script src="../JS/echarts.js"></script>
 </head>
 <body>
 <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
@@ -20,17 +20,29 @@
         },
         tooltip: {},
         legend: {
-            data: ['销量']
+            data: ['销量1', '销量2', '销量3']
         },
         xAxis: {
             data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
         },
         yAxis: {},
-        series: [{
-            name: '销量',
+        series: [
+            {
+            name: '销量1',
             type: 'bar',
             data: [5, 20, 36, 10, 10, 20]
-        }]
+            },
+            {
+            name: '销量2',
+            type: 'bar',
+            data: [10, 20, 25, 10, 56, 20]
+            },
+            {
+            name: '销量3',
+            type: 'bar',
+            data: [5, 30, 36, 10, 20, 80]
+            }
+        ]
     };
 
     // 使用刚指定的配置项和数据显示图表。
