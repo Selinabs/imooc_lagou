@@ -11,6 +11,7 @@ import time
 class HandleLagouData(object):
     def __init__(self):
         self.mysql_session = Session()
+        self.date = time.strftime("%Y-%m-%d", time.localtime())
 
     def insert_item(self, item):
         date = time.strftime("%Y-%m-%d", time.localtime())
@@ -44,4 +45,5 @@ class HandleLagouData(object):
             self.mysql_session.commit()
             print("新增岗位信息%s" % item["positionId"])
 
+    def
 lagou_mysql = HandleLagouData()
